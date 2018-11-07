@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/java11-collectors-joining.svg?branch=master)](https://travis-ci.com/mtumilowicz/java11-collectors-joining)
+
 # java11-collectors-joining
 The main goal of this project is to show `Collectors.joining` API
 and `String.join`.
