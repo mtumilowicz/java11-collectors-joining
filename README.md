@@ -60,3 +60,5 @@ We provide tests for mentioned above methods.
 * If you don't need to - don't use streams - `String.join` is faster.
 * If you want to customize joining - take a look at `StringJoiner` - 
 please refer my other github project [StringJoiner](https://github.com/mtumilowicz/java11-StringJoiner).
+* `Collectors.joining` and `String.join` is internally implemented 
+using StringJoiner / StringBuilder.
