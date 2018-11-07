@@ -56,4 +56,4 @@ We provide tests for mentioned above methods.
 
 # remarks
 * If you don't need to - don't use streams - `String.join` is faster.
-* If you want to customize joining - take a look at `StringJoiner`
+* If you want to customize joining - take a look at `StringJoiner`.
