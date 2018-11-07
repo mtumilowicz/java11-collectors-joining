@@ -31,10 +31,10 @@ public class CollectorsJoiningTest {
     public void collectors_joining_delimiter_prefix_suffix() {
         var concat = Stream.of("a", "b", "c")
                 .collect(Collectors.joining(",",
-                        "prefix",
-                        "suffix"));
+                        "prefix-",
+                        "-suffix"));
 
-        assertThat(concat, is("prefixa,b,csuffix"));
+        assertThat(concat, is("prefix-a,b,c-suffix"));
     }
     
     @Test
