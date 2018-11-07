@@ -35,3 +35,25 @@ join(CharSequence delimiter, Iterable<? extends CharSequence> elements)
 
 # project description
 We provide tests for mentioned above methods.
+* "a", "b", "c" -> "abc"
+    ```
+    Stream.of("a", "b", "c").collect(Collectors.joining());
+    ```
+    ```
+    String.join("", "a", "b", "c");
+    ```
+* "a", "b", "c" -> "a,b,c"
+    ```
+    Stream.of("a", "b", "c").collect(Collectors.joining(","));
+    ```
+    ```
+    String.join(",", List.of("a", "b", "c"));
+    ```
+* "a", "b", "c" -> "prefix-a,b,c-suffix"
+    ```
+    Stream.of("a", "b", "c").collect(Collectors.joining(",", "prefix-", "-suffix"));
+    ```
+
+# remarks
+* If you don't need to - don't use streams - `String.join` is faster.
+* If you want to customize joining - take a look at `StringJoiner`
